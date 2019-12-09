@@ -18,6 +18,36 @@ a{
   transition: all .3s ease;
   color: $color-main;
   font-weight: $font-weight-bold;
+
+  &:hover,
+  &:focus{
+    color: $color-alt;
+  }
+}
+
+img.alignnone{
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 25px;
+}
+img.aligncenter{
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 25px auto;
+}
+img.alignright{
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 25px 0px 25px 25px;
+}
+img.alignleft{
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 25px 25px 25px 0;
 }
 
 .btn-main{
@@ -43,15 +73,40 @@ section{
   padding-bottom: 40px;
 }
 
-#hp-main{
+.vertical-flag{
+  float: right;
+  margin-top: -40px;
+}
+
+@include media-breakpoint-down(sm){
   .vertical-flag{
-    float: right;
-    margin-top: -40px;
+    display: none;
+  }
+}
+
+#faq-accordion{
+  .card{
+    border:none;
   }
 
-  @include media-breakpoint-down(sm){
-    .vertical-flag{
-      display: none;
+  .card-header{
+    background: transparent;
+    border-bottom: none;
+    padding: 0;
+
+    h4{
+      margin-bottom: 0;
     }
+
+    .btn-link{
+      font-size: 24px;
+      color: $color-main;
+      font-weight: $font-weight-bold;
+      font-style: italic;
+    }
+  }
+
+  .card-body{
+    padding-top: 0;
   }
 }
