@@ -13,3 +13,45 @@ h2{
   font-weight: $font-weight-black;
   font-size: 54px;
 }
+
+a{
+  transition: all .3s ease;
+  color: $color-main;
+  font-weight: $font-weight-bold;
+}
+
+.btn-main{
+  display: inline-block;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 5px 40px;
+  background-color: $color-alt;
+  text-align: center;
+  font-weight: $font-weight-normal;
+
+  &:hover,
+  &:focus{
+    background-color: $color-main-light;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+section{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+#hp-main{
+  .vertical-flag{
+    float: right;
+    margin-top: -40px;
+  }
+
+  @include media-breakpoint-down(sm){
+    .vertical-flag{
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,90 @@
+#find-bank{
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: $color-main;
+
+  h2{
+    color: $color-alt;
+  }
+}
+
+.magnifier{
+  margin-top: 15px;
+}
+
+@include media-breakpoint-down(sm){
+  #find-bank{
+    padding-top: 40px;
+
+    h2{
+      margin-bottom: 40px;
+    }
+  }
+
+  .magnifier{
+    margin-top: 40px;
+  }
+}
+
+#footer{
+  background-color: $color-main-dark;
+  color: #fff;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+#footer-nav{
+  display: flex;
+  justify-content: center;
+
+  .list-inline{
+    .nav-item{
+      display: inline-block;
+    }
+  }
+
+  .nav-link{
+    font-size:20px;
+    color: #fff;
+    text-align: center;
+    font-weight: $font-weight-normal;
+
+    &::before{
+      content: attr(title);
+      font-weight: $font-weight-bold;
+      height: 0;
+      overflow: hidden;
+      visibility: hidden;
+      display: block;
+    }
+  }
+
+  .nav-item.active .nav-link,
+  .nav-link:hover,
+  .nav-link:focus{
+    font-weight: $font-weight-bold;
+  }
+}
+
+.footer-logos{
+  display: flex;
+  justify-content: center;
+
+  img{
+    margin: 15px;
+  }
+}
+
+.copyright{
+  text-align: center;
+  margin-top: 40px;
+  font-size: 14px;
+
+  p{
+    margin-bottom: 0;
+  }
+
+  a{
+    color:#fff;
+  }
+}

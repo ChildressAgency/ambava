@@ -61,6 +61,7 @@
     font-size: 22px;
     color: #fff;
     text-align: center;
+    font-weight: $font-weight-normal;
 
     &::before{
       content: attr(title);
