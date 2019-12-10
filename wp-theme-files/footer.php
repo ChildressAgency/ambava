@@ -33,7 +33,8 @@
             'echo' => true,
             'fallback_cb' => 'vbbp_footer_fallback_menu',
             'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-            'depth' => 1
+            'depth' => 1,
+            'walker' => new WP_Bootstrap_NavWalker()
           );
           wp_nav_menu($footer_nav_args);
         ?>
