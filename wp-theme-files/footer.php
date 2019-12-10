@@ -1,4 +1,4 @@
-<?php if(!is_page('contact')); ?>
+<?php if(!is_page('contact')): ?>
   <section id="find-bank">
     <div class="container">
       <div class="row">
@@ -43,7 +43,7 @@
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/va-logo.png" class="img-fluid d-block" alt="U.S. Department of Veterans Affairs Logo" />
       </div>
       <div class="copyright">
-        <p>&copy; <?php echo date('Y'); ?> <?php echo echo_html(bloginfo('name')); ?></p>
+        <p>&copy; <?php echo date('Y'); ?> <?php echo esc_html(bloginfo('name')); ?></p>
         <p>Website created by <a href="https://childressagency.com" target="_blank">The Childress Agency</a></p>
       </div>
     </div>
