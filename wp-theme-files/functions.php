@@ -158,7 +158,7 @@ function vbbp_footer_fallback_menu(){ ?>
     <li class="nav-item<?php if(is_front_page()){ echo ' active'; } ?>">
       <a href="<?php echo esc_url(home_url()); ?>" class="nav-link" title="<?php echo esc_attr__('Home', 'vbbp'); ?>"><?php echo esc_html__('Home', 'vbbp'); ?></a>
     </li>
-    <li class="nav-item<?php if(is_page('about') || is_page('association-of-military-banks-of-america') || is_page('department-of-veteran-affairs-vba')){ echo ' active'; } ?>">
+    <li class="nav-item<?php if(is_page('about') || is_page('association-of-military-banks-of-america') || is_page('department-of-veterans-affairs-vba')){ echo ' active'; } ?>">
       <a href="<?php echo esc_url(home_url('about')); ?>" class="nav-link" title="<?php echo esc_attr__('About', 'vbbp'); ?>"><?php echo esc_html__('About', 'vbbp'); ?></a>
     </li>
     <li class="nav-item<?php if(is_page('banks')){ echo ' active'; } ?>">
