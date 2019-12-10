@@ -62,7 +62,7 @@
   ?>
   <section id="hp-hero" class="hero" style="background-image:url(<?php echo esc_url($hero_background_image); ?>); <?php echo esc_attr($hero_background_image_css); ?>">
     <div class="container">
-      <div class="hero-caption">
+      <div class="hero-caption animated slideInLeft">
         <?php echo apply_filters('the_content', wp_kses_post(get_field('hero_caption'))); ?>
         <?php if(is_front_page()): ?>
           <div class="logos">
@@ -73,4 +73,5 @@
       </div>
     </div>
     <div class="white-gradient"></div>
+    <div class="fade-in"></div>
   </section>

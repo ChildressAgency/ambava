@@ -3,13 +3,13 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4 d-flex align-items-center">
-          <h2><?php echo esc_html__('Find the right bank for you.', 'vbbp'); ?></h2>
+          <h2 class="animated"><?php echo esc_html__('Find the right bank for you.', 'vbbp'); ?></h2>
         </div>
         <div class="col-md-4 d-flex align-items-center justify-content-center">
           <a href="<?php echo esc_url(home_url('contact')); ?>" class="btn-main"><?php echo esc_html__('Learn More', 'vbbp'); ?></a>
         </div>
         <div class="col-md-4 d-flex align-items-end">
-          <div class="magnifier">
+          <div class="magnifier animated">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/magnifier.png" class="img-fluid d-block mx-auto" alt="" />
           </div>
         </div>
