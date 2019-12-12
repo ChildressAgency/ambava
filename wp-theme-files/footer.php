@@ -6,7 +6,7 @@
           <h2 class="animated"><?php echo esc_html__('Find the right bank for you.', 'vbbp'); ?></h2>
         </div>
         <div class="col-md-4 d-flex align-items-center justify-content-center">
-          <a href="<?php echo esc_url(home_url('banks')); ?>" class="btn-main"><?php echo esc_html__('Learn More', 'vbbp'); ?></a>
+          <a href="<?php echo esc_url(home_url('banks')); ?>" class="btn-main"><?php echo esc_html__('Find a Bank', 'vbbp'); ?></a>
         </div>
         <div class="col-md-4 d-flex align-items-end">
           <div class="magnifier animated">
@@ -40,8 +40,8 @@
         ?>
       </nav>
       <div class="footer-logos">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/amba-logo.png" class="img-fluid d-block" alt="Association of Military Banks of America Logo" />
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/va-logo.png" class="img-fluid d-block" alt="U.S. Department of Veterans Affairs Logo" />
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/amba-logo.png" class="img-fluid d-block" alt="Association of Military Banks of America Logo" />
       </div>
       <div class="copyright">
         <p>&copy; <?php echo date('Y'); ?> <?php echo esc_html(bloginfo('name')); ?></p>

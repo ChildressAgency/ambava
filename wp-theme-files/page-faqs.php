@@ -2,7 +2,6 @@
   <main id="main">
     <section id="faq">
       <div class="container">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/vertical-flag.png" class="img-fluid vertical-flag" alt="" />
         <article>
           <?php get_template_part('partials/loop'); ?>
         </article>

@@ -19,7 +19,6 @@
       <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="brand">
           <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/va-logo.png" class="img-fluid d-block mr-3" alt="Department of Veterans Affairs Logo" />
-          <p class="slogan d-none d-sm-block">Those Who Serve<span>Bank On Us</span></p>
           <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/amba-logo.png" class="img-fluid d-block ml-3" alt="Association of Military Banks of America Logo" />
         </div>
         <p class="slogan d-block d-sm-none">Those Who Serve<span>Bank On Us</span></p>
@@ -66,9 +65,10 @@
         <?php echo apply_filters('the_content', wp_kses_post(get_field('hero_caption'))); ?>
         <?php if(is_front_page()): ?>
           <div class="logos">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/amba-logo.png" class="img-fluid d-block" alt="Association of Military Banks of America Logo" />
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/va-logo.png" class="img-fluid d-block" alt="Department of Veterans Affairs Logo" />
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/amba-logo.png" class="img-fluid d-block" alt="Association of Military Banks of America Logo" />
           </div>
+          <a href="<?php echo esc_url(home_url('banks')); ?>" class="btn-main mt-5">Find a Bank</a>
         <?php endif; ?>
       </div>
     </div>
