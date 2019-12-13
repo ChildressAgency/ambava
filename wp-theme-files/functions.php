@@ -172,3 +172,33 @@ function vbbp_footer_fallback_menu(){ ?>
     </li>
   </ul>
 <?php }
+
+add_filter('block_categories', 'vbbp_custom_block_category', 10, 2);
+function vbbp_custom_block_category($categories, $post){
+  return array_merge(
+    $categories,
+    array(
+      array(
+        'slug' => 'custom-blocks',
+        'title' => esc_html__('Custom Blocks', 'vbbp'),
+        'icon' => 'wordpress'
+      )
+    )
+  );
+}
+
+add_action('acf/init', 'vbbp_register_blocks');
+function vbbp_register_blocks(){
+  if(function_exists('acf_register_block_type')){
+    acf_register_block_type(array(
+      'name' => 'prestyled_button',
+      'title' => esc_html__('Pre-Styled Button', 'vbbp'),
+      'description' => esc_html__('Add a pre-styled button', 'vbbp'),
+      'category' => 'custom-blocks',
+      'mode' => 'auto',
+      'align' => 'full',
+      'render_template' => get_stylesheet_directory() . '/partials/blocks/prestyled_button.php',
+      'enqueue_style' => get_stylesheet_directory_uri() . '/partials/blocks/prestyled_button.css'
+    ));
+  }
+}
