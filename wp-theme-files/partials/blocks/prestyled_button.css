@@ -1,0 +1,17 @@
+.btn-main{
+  display: inline-block;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 5px 40px;
+  background-color: #ff3115;
+  text-align: center;
+  font-weight: 400;
+}
+
+.btn-main:hover,
+.btn-main:focus{
+  background-color: #3375bb;
+  color: #fff;
+  text-decoration: none;
+}

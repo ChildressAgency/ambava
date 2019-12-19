@@ -1,0 +1,77 @@
+.white-gradient{
+  background: rgba(255,255,255,0.92);
+  background: -moz-linear-gradient(left, rgba(255,255,255,0.92) 0%, rgba(255,255,255,0.92) 34%, rgba(255,255,255,0) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,0.92)), color-stop(34%, rgba(255,255,255,0.92)), color-stop(100%, rgba(255,255,255,0)));
+  background: -webkit-linear-gradient(left, rgba(255,255,255,0.92) 0%, rgba(255,255,255,0.92) 34%, rgba(255,255,255,0) 100%);
+  background: -o-linear-gradient(left, rgba(255,255,255,0.92) 0%, rgba(255,255,255,0.92) 34%, rgba(255,255,255,0) 100%);
+  background: -ms-linear-gradient(left, rgba(255,255,255,0.92) 0%, rgba(255,255,255,0.92) 34%, rgba(255,255,255,0) 100%);
+  background: linear-gradient(to right, rgba(255,255,255,0.92) 0%, rgba(255,255,255,0.92) 34%, rgba(255,255,255,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 );
+
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.hero{
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+}
+
+.fade-in{
+  position: absolute;
+  z-index: 4;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  background-color: #fff;
+
+  animation-name: fade-out;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-out{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+.hero-caption{
+  position: relative;
+  z-index: 5;
+
+  h2{
+    text-transform: uppercase;
+  }
+
+  .logos{
+    display: flex;
+    /*justify-content: center;*/
+
+    img{
+      margin: 15px;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg){
+  .hero-caption{
+    max-width: 50%;
+  }
+}
