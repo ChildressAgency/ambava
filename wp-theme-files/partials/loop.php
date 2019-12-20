@@ -7,7 +7,7 @@
         the_content();
       }
       else{
-        echo '<h3><a href="' . get_permalink() . '">' . get_the_title() . '</a><h3>';
+        echo '<h3><a href="' . get_permalink() . '">' . get_the_title() . '</a></h3>';
         the_excerpt();
       }
     }
