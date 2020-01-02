@@ -10,4 +10,13 @@ jQuery(document).ready(function($){
   $('#find-bank').waypoint(function(){
     $('#find-bank').find('.animated').addClass('fadeInUp');
   }, {offset: '90%'});
+
+  $('.btn-main').on('click', function(){
+    if($(this).attr('target') == '_blank'){
+      console.log('true');
+      $outboundLink = $(this).attr('href');
+      getOutboundLink($outboundLink);
+      return false;
+    }
+  });
 });
