@@ -200,5 +200,16 @@ function vbbp_register_blocks(){
       'render_template' => get_stylesheet_directory() . '/partials/blocks/prestyled_button.php',
       'enqueue_style' => get_stylesheet_directory_uri() . '/partials/blocks/prestyled_button.css'
     ));
+
+    acf_register_block_type(array(
+      'name' => 'accordion_section',
+      'title' => esc_html__('Accordion Section', 'vbbp'),
+      'description' => esc_html__('Add an accordion section', 'vbbp'),
+      'category' => 'custom-blocks',
+      'mode' => 'auto',
+      'align' => 'full',
+      'render_template' => get_stylesheet_directory() . '/partials/blocks/accordion_section.php',
+      'enqueue_style' => get_stylesheet_directory_uri() . '/partials/blocks/accordion_section.css'
+    ));
   }
 }
