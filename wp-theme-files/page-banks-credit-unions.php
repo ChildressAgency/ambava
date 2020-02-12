@@ -12,14 +12,14 @@
       </section>
     <?php endif; ?>
 
-    <section class="bank-section-title">
+    <section class="bank-section-title sticky-top">
       <div class="container">
         <div class="row">
           <div class="col-md-4">
             <img src="https://veteransbenefitsbanking.org/wp-content/uploads/2019/12/amba-logo.png" class="img-fluid d-block mx-auto" alt="Association of Military Banks of America Logo" />
           </div>
-          <div class="col-md-8 d-flex justify-content-around">
-            <h2>AMBA Participating Banks</h2>
+          <div class="col-md-8 d-flex align-items-center">
+            <h2>Participating AMBA Banks</h2>
           </div>
         </div>
       </div>
@@ -39,14 +39,14 @@
       </div>
     </section>
 
-    <section class="bank-section-title">
+    <section class="bank-section-title sticky-top">
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <img src="https://veteransbenefitsbanking.org/wp-content/uploads/2020/02/DCUC-LOGO-VERTICAL.png" class="img-fluid d-block mx-auto" alt="Defense Credit Union Council Logo" />
+            <img src="https://veteransbenefitsbanking.org/wp-content/uploads/2020/02/DCUC-LOGO-VERTICAL.png" class="img-fluid d-block mx-auto" alt="Defense Credit Union Council Logo" style="max-width:150px;" />
           </div>
-          <div class="col-md-8 d-flex justify-content-around">
-            <h2>DUCU Participating Credit Unions</h2>
+          <div class="col-md-8 d-flex align-items-center">
+            <h2>Participating DCUC Credit Unions</h2>
           </div>
         </div>
       </div>
