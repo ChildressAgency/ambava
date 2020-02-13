@@ -66,17 +66,14 @@
           <div class="col-sm-6">
             <div class="hero-caption animated slideInLeft" style="max-width:none !important;">
               <?php echo apply_filters('the_content', wp_kses_post(get_field('hero_caption'))); ?>
-              <div class="logos">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/va-logo.png" class="img-fluid d-block" alt="Department of Veterans Affairs Logo" />
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/amba-logo.png" class="img-fluid d-block" alt="Association of Military Banks of America Logo" />
-              </div>
               <a href="<?php echo esc_url(home_url('banks')); ?>" class="btn-main mt-5">Find a Bank</a>
             </div>
           </div>
           <div class="col-sm-6">
-            <div class="embed-responsive embed-responsive-4by3" style="z-index:5;">
-              <?php the_field('hero_video'); ?>
-            </div>
+              <div class="logos">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/va-logo-large.png" class="img-fluid d-block" alt="Department of Veterans Affairs Logo" />
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/amba-logo-large.png" class="img-fluid d-block" alt="Association of Military Banks of America Logo" />
+              </div>
           </div>
         </div>
       <?php else: ?>
