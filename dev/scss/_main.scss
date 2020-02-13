@@ -132,6 +132,39 @@ section{
   }
 }
 
+#accordion{
+  .card{
+    border-bottom: 1px solid rgba(0,0,0,.125)
+  }
+    .btn-link{
+      font-size: 24px;
+      color: $color-main;
+      font-weight: $font-weight-bold;
+      font-style: italic;
+      text-align: left;
+
+      &.opener{
+        padding-left: 30px;
+        position: relative;
+
+        &::before{
+          content: "-";
+          font-size: 58px;
+          line-height: 1em;
+          position: absolute;
+          left: 0;
+          top: -8px;
+        }
+        &.collapsed::before{
+            content: "+";
+            top: 0;
+            font-size:44px;
+        }
+      }
+
+    }
+}
+
 .bank-section-title{
   background-image: url(images/gold-texture.jpg);
   background-size: cover;

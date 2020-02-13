@@ -1,5 +1,5 @@
 <?php if(have_rows('accordion_section')): ?>
-  <section id="faq-accordion" class="accordion">
+  <section id="accordion" class="accordion">
     <?php $t = 0; while(have_rows('accordion_section')): the_row(); ?>
       <div class="card">
         <div class="card-header" id="accordion-section-<?php echo $t; ?>-title">
@@ -9,7 +9,7 @@
             </button>
           </h4>
         </div>
-        <div id="accordion-section-<?php echo $t; ?>-content" class="collapse" aria-labelledby="accordion-section-<?php echo $t; ?>-title" data-parent="#faq-accordion">
+        <div id="accordion-section-<?php echo $t; ?>-content" class="collapse" aria-labelledby="accordion-section-<?php echo $t; ?>-title" data-parent="#accordion">
           <div class="card-body" style="padding-left:40px;">
             <?php the_sub_field('accordion_section_content'); ?>
           </div>
