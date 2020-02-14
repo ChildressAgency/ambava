@@ -30,7 +30,7 @@
         <?php if(have_rows('amba_banks')): while(have_rows('amba_banks')): the_row(); ?>
           <div class="bank">
             <?php $bank_image = get_sub_field('amba_bank_logo'); ?>
-            <img src="<?php echo esc_url($bank_image['url']); ?>" class="img-fluid d-block" alt="<?php echo esc_attr($bank_image['alt']); ?>" />
+            <img src="<?php echo esc_url($bank_image['url']); ?>" class="img-fluid d-block" alt="<?php echo esc_attr($bank_image['alt']); ?>" style="max-width:400px;" />
             <?php the_sub_field('amba_bank_content'); ?>
             <?php $bank_link = get_sub_field('amba_bank_link'); ?>
             <a href="<?php echo esc_url($bank_link['url']); ?>" class="btn-main" target="_blank"><?php echo esc_html($bank_link['title']); ?></a>
@@ -57,7 +57,7 @@
         <?php if(have_rows('dcuc_banks')): while(have_rows('dcuc_banks')): the_row(); ?>
           <div class="bank">
             <?php $bank_image = get_sub_field('dcuc_bank_logo'); ?>
-            <img src="<?php echo esc_url($bank_image['url']); ?>" class="img-fluid d-block" alt="<?php echo esc_attr($bank_image['alt']); ?>" />
+            <img src="<?php echo esc_url($bank_image['url']); ?>" class="img-fluid d-block" alt="<?php echo esc_attr($bank_image['alt']); ?>" style="max-width:400px;" />
             <?php the_sub_field('dcuc_bank_content'); ?>
             <?php $bank_link = get_sub_field('dcuc_bank_link'); ?>
             <a href="<?php echo esc_url($bank_link['url']); ?>" class="btn-main" target="_blank"><?php echo esc_html($bank_link['title']); ?></a>

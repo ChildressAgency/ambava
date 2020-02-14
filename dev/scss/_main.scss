@@ -144,21 +144,24 @@ section{
       text-align: left;
 
       &.opener{
-        padding-left: 30px;
+        padding-left: 35px;
         position: relative;
 
         &::before{
-          content: "-";
-          font-size: 58px;
+          content: "\f078";
+          font-family: "Font Awesome 5 Free";
+          font-style: normal;
+          font-size: 30px;
           line-height: 1em;
           position: absolute;
           left: 0;
-          top: -8px;
+          top: 9px;
+          transform: rotateX(180deg);
+          transition: all .3s ease;
         }
         &.collapsed::before{
-            content: "+";
-            top: 0;
-            font-size:44px;
+          content: "\f078";
+          transform: rotateX(0deg);
         }
       }
 
